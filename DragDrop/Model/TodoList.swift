@@ -11,23 +11,27 @@ import SwiftUI
 
 class TodoList: ObservableObject {
     
-    @Published  var activeItemIds: [TodoItem] = []
-    @Published  var doingItemIds: [TodoItem] = []
-    @Published  var underReviewItemIds: [TodoItem] = []
-    @Published  var completedItemIds: [TodoItem] = []
+    @Published  var todoItems: [TodoItem] = []
+    @Published  var doingItems: [TodoItem] = []
+    @Published  var underReviewItems: [TodoItem] = []
+    @Published  var doneItems: [TodoItem] = []
+    
+    @Published var draggedItem: TodoItem?
+    
+    @Published var draggedIdentifier: String = UUID().uuidString
     
     func addTodo(withImage image: String, withName name: String, dueDate: Date, todoStatus: TodoStatus = .todo) {
         let item = TodoItem(image: image, name: name, dueDate: dueDate, todoStatus: todoStatus)
         
         switch(todoStatus) {
         case .todo:
-            activeItemIds.append(item)
+            todoItems.append(item)
         case .doing:
-            doingItemIds.append(item)
+            doingItems.append(item)
         case .underReview:
-            underReviewItemIds.append(item)
+            underReviewItems.append(item)
         case .done:
-            completedItemIds.append(item)
+            doneItems.append(item)
         }
         
     }

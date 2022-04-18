@@ -16,8 +16,8 @@ enum TodoStatus {
 
 struct TodoItem: Identifiable {
     let id: String = UUID().uuidString
-    let image: String
-    let name: String
-    let dueDate: Date
-    let todoStatus: TodoStatus
+    var image: String
+    var name: String
+    var dueDate: Date
+    var todoStatus: TodoStatus
 }

@@ -12,6 +12,7 @@ struct DragDropApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(TodoList.sampleData())
         }
     }
 }

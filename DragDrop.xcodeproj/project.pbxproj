@@ -11,6 +11,13 @@
 		F5E61721280AFBBF00461F7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E61720280AFBBF00461F7A /* ContentView.swift */; };
 		F5E61723280AFBC200461F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5E61722280AFBC200461F7A /* Assets.xcassets */; };
 		F5E61726280AFBC200461F7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5E61725280AFBC200461F7A /* Preview Assets.xcassets */; };
+		F5E6172D280B093E00461F7A /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E6172C280B093E00461F7A /* TabBarView.swift */; };
+		F5E6172F280B150000461F7A /* DashboardTopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E6172E280B150000461F7A /* DashboardTopBarView.swift */; };
+		F5E61731280BC53B00461F7A /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E61730280BC53B00461F7A /* TaskView.swift */; };
+		F5E61733280BC59D00461F7A /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E61732280BC59D00461F7A /* TaskListView.swift */; };
+		F5E61736280BEA6900461F7A /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E61735280BEA6900461F7A /* TodoItem.swift */; };
+		F5E61738280BEB0500461F7A /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E61737280BEB0500461F7A /* TodoList.swift */; };
+		F5E6173C280BED4000461F7A /* Formatter+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E6173B280BED4000461F7A /* Formatter+Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		F5E61720280AFBBF00461F7A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F5E61722280AFBC200461F7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5E61725280AFBC200461F7A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F5E6172C280B093E00461F7A /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		F5E6172E280B150000461F7A /* DashboardTopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTopBarView.swift; sourceTree = "<group>"; };
+		F5E61730280BC53B00461F7A /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		F5E61732280BC59D00461F7A /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
+		F5E61735280BEA6900461F7A /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
+		F5E61737280BEB0500461F7A /* TodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
+		F5E6173B280BED4000461F7A /* Formatter+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Formatter+Utilities.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +65,10 @@
 		F5E6171D280AFBBF00461F7A /* DragDrop */ = {
 			isa = PBXGroup;
 			children = (
+				F5E6173A280BED3700461F7A /* Util */,
+				F5E61734280BEA3A00461F7A /* Model */,
+				F5E61739280BEC0C00461F7A /* View */,
 				F5E6171E280AFBBF00461F7A /* DragDropApp.swift */,
-				F5E61720280AFBBF00461F7A /* ContentView.swift */,
 				F5E61722280AFBC200461F7A /* Assets.xcassets */,
 				F5E61724280AFBC200461F7A /* Preview Content */,
 			);
@@ -65,6 +81,35 @@
 				F5E61725280AFBC200461F7A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F5E61734280BEA3A00461F7A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5E61735280BEA6900461F7A /* TodoItem.swift */,
+				F5E61737280BEB0500461F7A /* TodoList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5E61739280BEC0C00461F7A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5E61720280AFBBF00461F7A /* ContentView.swift */,
+				F5E61730280BC53B00461F7A /* TaskView.swift */,
+				F5E61732280BC59D00461F7A /* TaskListView.swift */,
+				F5E6172C280B093E00461F7A /* TabBarView.swift */,
+				F5E6172E280B150000461F7A /* DashboardTopBarView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5E6173A280BED3700461F7A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				F5E6173B280BED4000461F7A /* Formatter+Utilities.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +183,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5E61721280AFBBF00461F7A /* ContentView.swift in Sources */,
+				F5E6172D280B093E00461F7A /* TabBarView.swift in Sources */,
 				F5E6171F280AFBBF00461F7A /* DragDropApp.swift in Sources */,
+				F5E61738280BEB0500461F7A /* TodoList.swift in Sources */,
+				F5E61731280BC53B00461F7A /* TaskView.swift in Sources */,
+				F5E6172F280B150000461F7A /* DashboardTopBarView.swift in Sources */,
+				F5E6173C280BED4000461F7A /* Formatter+Utilities.swift in Sources */,
+				F5E61733280BC59D00461F7A /* TaskListView.swift in Sources */,
+				F5E61736280BEA6900461F7A /* TodoItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +327,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -284,7 +337,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -304,6 +357,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,7 +367,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
