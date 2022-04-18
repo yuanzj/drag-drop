@@ -11,14 +11,14 @@ import SwiftUI
 
 class TodoList: ObservableObject {
     
+    static let typeIdentifier = "cn.duoweibiaoge.drag_drop.item"
+    
     @Published  var todoItems: [TodoItem] = []
     @Published  var doingItems: [TodoItem] = []
     @Published  var underReviewItems: [TodoItem] = []
     @Published  var doneItems: [TodoItem] = []
     
     @Published var draggedItem: TodoItem?
-    
-    @Published var draggedIdentifier: String = UUID().uuidString
     
     func addTodo(withImage image: String, withName name: String, dueDate: Date, todoStatus: TodoStatus = .todo) {
         let item = TodoItem(image: image, name: name, dueDate: dueDate, todoStatus: todoStatus)

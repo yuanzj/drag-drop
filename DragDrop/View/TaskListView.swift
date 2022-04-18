@@ -45,7 +45,7 @@ struct TaskListView: View {
             }
             .frame(maxHeight: .infinity)
             .frame(width: 320)
-            .onDrop(of: [todoList.draggedIdentifier], delegate: AddDropDelegate(todoStatus: todoStatus, todoList: todoList))
+            .onDrop(of: [TodoList.typeIdentifier], delegate: AddDropDelegate(todoStatus: todoStatus, todoList: todoList))
         }
         .padding(.vertical, 32)
         

@@ -75,10 +75,9 @@ struct TaskView: View {
         .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
         .onDrag {
             todoList.draggedItem = item
-            todoList.draggedIdentifier = item.id
-            return NSItemProvider(item: nil, typeIdentifier: item.id)
+            return NSItemProvider(item: nil, typeIdentifier: TodoList.typeIdentifier)
         }
-        .onDrop(of: [item.id], delegate: MyDropDelegate(droppedItem: item, todoList: todoList))
+        .onDrop(of: [TodoList.typeIdentifier], delegate: MyDropDelegate(droppedItem: item, todoList: todoList))
         .shadow(color: Color.black.opacity(0.2), radius: 8, x: 0, y: 4)
         .padding(16)
     }
